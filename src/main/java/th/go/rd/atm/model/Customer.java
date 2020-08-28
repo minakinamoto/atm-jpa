@@ -14,6 +14,12 @@ public class Customer {
 
     public Customer(){}
 
+    public Customer(int id, String name, String pin) {
+        this.id = id;
+        this.name = name;
+        this.pin = pin;
+    }
+
     public int getId() {
         return id;
     }
@@ -38,11 +44,7 @@ public class Customer {
         this.pin = pin;
     }
 
-    public Customer(int id, String name, String pin) {
-        this.id = id;
-        this.name = name;
-        this.pin = pin;
-    }
+
 
     @Override
     public String toString() {
@@ -52,4 +54,5 @@ public class Customer {
                 ", pin='" + pin + '\'' +
                 '}';
     }
+
 }
